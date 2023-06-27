@@ -11,6 +11,7 @@ module.exports = {
         id: this._id,
         name: this.name,
         description: this.description,
+        user: this.user,
       };
     },
   },

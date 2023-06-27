@@ -63,29 +63,7 @@ module.exports = {
 		},
 		user     : {
 			methods : {
-				/**
-				 * @swagger
-				 * /auth/user:
-				 *   post:
-				 *     description: Login a user and get the JWT token
-				 *     tags: [Auth]
-				 *     parameters:
-				 *        - name: type
-				 *          type: string
-				 *          in: query
-				 *          required: true
-				 *          description: The type of auth
-				 *     security: []
-				 *     requestBody:
-				 *       required: true
-				 *       content:
-				 *         application/json:
-				 *           schema:
-				 *             $ref: '#/components/schemas/AuthPayload'
-				 *     responses:
-				 *       200:
-				 *         description: The user session was created
-				 */
+			
 				post : async function (context) {
 					let credentials = context.payload;
 
